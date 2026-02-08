@@ -1,0 +1,16 @@
+﻿curl.exe :   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+위치 C:\Users\parkj\AppData\Local\Temp\ps-script-1438e14e-d5d1-44f7-9dd3-cd5eb6c8ff93.ps1:76 문자:34
++ ... $response = curl.exe -X POST "http://localhost:3000/api/judge?debug_u ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Current:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  2932    0  2785  100   147   555k  30036 --:--:-- --:--:-- --:--:--  715k
+{"type":"start","run_id":"b5db923d-8eb0-4bd5-b633-c674a9c85aaa","ts":"2026-02-08T03:02:48.416Z","request_id":"a9ae10a1-9628-4ca6-bf72-21cc115fd350","user_id":"test123","mode":"base","debate":"none"}
+{"type":"engine_result","run_id":"b5db923d-8eb0-4bd5-b633-c674a9c85aaa","ts":"2026-02-08T03:02:48.418Z","role":"probability","provider":"mock","result":{"role":"probability","claim":"?ㅺ? ?놁뼱??mock 異쒕젰?낅땲?? ?ㅼ젣 ?곌껐 ??洹쇨굅/?섏튂媛 媛뺥솕?⑸땲??","assumptions":["異붽? ?곗씠??誘몄젣怨?,"?쒖옣 議곌굔? 蹂??媛??],"numbers":[{"metric":"unknown","value":"unknown","range":"unknown"}],"reasoning":["?꾩젣 ?뺤씤 ?꾩슂","?곷갑/?섎갑 ?쒕굹由ъ삤 紐⑤몢 ?대젮 ?덉쓬","???鍮꾧탳媛 ?꾩슂"],"questions_to_others":["媛?????섎갑 珥됰컻 ?붿씤??","????鍮??곗쐞 洹쇨굅??"],"confidence":0.76}}
+{"type":"engine_result","run_id":"b5db923d-8eb0-4bd5-b633-c674a9c85aaa","ts":"2026-02-08T03:02:48.418Z","role":"risk","provider":"mock","result":{"role":"risk","claim":"?ㅺ? ?놁뼱??mock 異쒕젰?낅땲?? ?ㅼ젣 ?곌껐 ??洹쇨굅/?섏튂媛 媛뺥솕?⑸땲??","assumptions":["異붽? ?곗씠??誘몄젣怨?,"?쒖옣 議곌굔? 蹂??媛??],"numbers":[{"metric":"unknown","value":"unknown","range":"unknown"}],"reasoning":["?꾩젣 ?뺤씤 ?꾩슂","?곷갑/?섎갑 ?쒕굹由ъ삤 紐⑤몢 ?대젮 ?덉쓬","???鍮꾧탳媛 ?꾩슂"],"questions_to_others":["媛?????섎갑 珥됰컻 ?붿씤??","????鍮??곗쐞 洹쇨굅??"],"confidence":0.66}}
+{"type":"engine_result","run_id":"b5db923d-8eb0-4bd5-b633-c674a9c85aaa","ts":"2026-02-08T03:02:48.418Z","role":"structure","provider":"mock","result":{"role":"structure","claim":"?ㅺ? ?놁뼱??mock 異쒕젰?낅땲?? ?ㅼ젣 ?곌껐 ??洹쇨굅/?섏튂媛 媛뺥솕?⑸땲??","assumptions":["異붽? ?곗씠??誘몄젣怨?,"?쒖옣 議곌굔? 蹂??媛??],"numbers":[{"metric":"unknown","value":"unknown","range":"unknown"}],"reasoning":["?꾩젣 ?뺤씤 ?꾩슂","?곷갑/?섎갑 ?쒕굹由ъ삤 紐⑤몢 ?대젮 ?덉쓬","???鍮꾧탳媛 ?꾩슂"],"questions_to_others":["媛?????섎갑 珥됰컻 ?붿씤??","????鍮??곗쐞 洹쇨굅??"],"confidence":0.79}}
+{"type":"engine_result","run_id":"b5db923d-8eb0-4bd5-b633-c674a9c85aaa","ts":"2026-02-08T03:02:48.418Z","role":"opportunity","provider":"mock","result":{"role":"opportunity","claim":"?ㅺ? ?놁뼱??mock 異쒕젰?낅땲?? ?ㅼ젣 ?곌껐 ??洹쇨굅/?섏튂媛 媛뺥솕?⑸땲??","assumptions":["異붽? ?곗씠??誘몄젣怨?,"?쒖옣 議곌굔? 蹂??媛??],"numbers":[{"metric":"unknown","value":"unknown","range":"unknown"}],"reasoning":["?꾩젣 ?뺤씤 ?꾩슂","?곷갑/?섎갑 ?쒕굹由ъ삤 紐⑤몢 ?대젮 ?덉쓬","???鍮꾧탳媛 ?꾩슂"],"questions_to_others":["媛?????섎갑 珥됰컻 ?붿씤??","????鍮??곗쐞 洹쇨굅??"],"confidence":0.77}}
