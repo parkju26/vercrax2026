@@ -1,20 +1,7 @@
-# dependencies
+@'
 node_modules/
-
-# env
+.next/
 .env
 .env.*
 !.env.example
-
-# build
-.next/
-dist/
-
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# OS
-.DS_Store
-Thumbs.db
+'@ | Add-Content .gitignore
