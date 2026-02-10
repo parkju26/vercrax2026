@@ -1,0 +1,48 @@
+import { loadMarketContext } from "../context/marketContext.js";
+import { runEngines } from "./runEngines.js";
+import { computeBaseJudgment } from "./verdict.js";
+import { runAllToAllDebate } from "./runAllToAllDebate.js";
+import { buildHashChain } from "./hashChain.js";
+
+export async function runPipeline({ prompt, mode, debate }) {
+  // 1️⃣ Market Context 주입
+  const market = loadMarketContext();
+
+  // 2️⃣ 엔진 실행 (context 강제 주입)
+  const engineResults = await runEngines({
+    prompt,
+    context: {
+      market: market.snapshot,
+    },
+  });
+
+  // 3️⃣ 기본 판단
+  const base = computeBaseJudgment(engineResults);
+
+  // 4️⃣ 토론
+  let debateResult = null;
+  if (debate === "all") {
+    debateResult = await runAllToAllDebate({
+      engineResults,
+      context: {
+        market: market.snapshot,
+      },
+    });
+  }
+
+  // 5️⃣ 무결성 체인
+  const hashChain = buildHashChain({
+    market,
+    engineResults,
+    base,
+    debateResult,
+  });
+
+  return {
+    market,
+    engineResults,
+    base,
+    debate: debateResult,
+    hashChain,
+  };
+}
